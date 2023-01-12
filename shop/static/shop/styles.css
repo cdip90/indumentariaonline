@@ -1,0 +1,9 @@
+table,th, td {
+    border: 1px solid;
+  }
+
+  caption {
+    font-family: fantasy;
+    color:darkred;
+    font-size: larger;
+}

@@ -1,0 +1,14 @@
+
+{% extends "shop/base.html" %}
+{% block title%}Cargar remera{% endblock %}
+
+{% block content %}
+<h1>Nueva remera</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Cargar remera">
+</form>
+
+{% endblock %}

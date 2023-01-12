@@ -1,0 +1,29 @@
+
+{% load static %}
+
+<html>
+
+    <header>
+        <a href="{% url 'index' %}">
+        <img src='{% static "shop/logo.png" %}' />
+        </a>
+    </header>
+
+    <head>
+        <title>
+
+            {% block title %}
+            {% endblock %}
+
+        </title>
+    </head>
+
+    <body>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </body>
+
+
+</html>
